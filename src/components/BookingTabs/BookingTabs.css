@@ -1,0 +1,123 @@
+/* CONTENEDOR GENERAL */
+.booking-wrapper {
+    background: transparent;
+    border: 1px solid #d9dbde;
+    border-radius: 10px;
+    padding: 15px 55px;
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* FRAME 152 */
+.booking-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* BOTONES */
+.booking-btn {
+    width: 150px;
+    height: 73px;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+}
+
+
+
+/* TEXTO */
+.booking-label {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 110%;
+    text-align: center;
+}
+
+/* ICONO */
+.booking-icon {
+    font-size: 22px;
+}
+
+/* ESTADO INACTIVO */
+.booking-btn {
+    color: #041c84;
+}
+
+/* ESTADO ACTIVO */
+.booking-btn.active {
+    color: #0869ea;
+}
+
+/* DIVIDER CENTRAL */
+.booking-divider {
+    width: 1px;
+    height: 73px;
+    background: #d9dbde;
+}
+
+
+/* POSICIÓN SEGÚN TAB */
+
+.booking-indicator.exam {
+    transform: translateX(0px);
+}
+
+.booking-indicator.specialist {
+    transform: translateX(165px);
+}
+
+/* HOVER */
+.booking-btn:hover {
+    opacity: 0.85;
+}
+
+
+/* BARRA INDICADORA AZUL */
+
+.booking-btn.active::after {
+    content: "";
+    position: absolute;
+
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 112px;
+    /* ancho fijo estilo figma */
+    height: 5px;
+
+    background: #0869ea;
+    border-radius: 100px;
+}
+
+.booking-btn::after {
+    transition: all 0.25s ease;
+}
+
+
+@media (max-width: 768px) {
+
+    .booking-tabs {
+        width: 100%;
+        padding: 10px 16px;
+    }
+
+    .booking-btn {
+        width: 50%;
+        font-size: 16px;
+    }
+
+    .booking-divider {
+        height: 40px;
+    }
+
+}

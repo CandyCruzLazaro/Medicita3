@@ -1,0 +1,250 @@
+/* CONTENEDOR LISTA */
+
+.results-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* CARD */
+
+.result-card {
+    display: flex;
+    background: #f9f9fa;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12);
+    overflow: hidden;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+/* IMAGEN */
+
+.result-card-image {
+    position: relative;
+    width: 190px;
+    min-width: 190px;
+    height: 190px;
+}
+
+.result-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* FAVORITO */
+
+.favorite-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: white;
+    border-radius: 50%;
+    border: 1.5px solid #fa1f1f;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+/* CONTENIDO */
+
+.result-card-content {
+    flex: 1;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* HEADER */
+
+.result-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.result-card-header h3 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    color: #0869ea;
+    text-decoration: underline;
+    margin: 0;
+}
+
+.result-card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.badge-icon {
+    width: 22px;
+    height: 22px;
+}
+
+
+
+/* INFO */
+
+.result-card-info p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #52575c;
+    font-family: Poppins;
+}
+
+
+
+/* FOOTER */
+
+.result-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ESTRELLAS */
+
+.stars {
+    color: #f2790f;
+    font-size: 18px;
+}
+
+/* PRECIO + BOTON */
+
+.price-action {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.price {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* BOTÓN */
+
+.btn-hours {
+    background: linear-gradient(180deg, #ffab62, #e4720f);
+    border: none;
+    border-radius: 5px;
+    padding: 8px 22px;
+    color: white;
+    font-family: Poppins;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* INFO */
+
+.result-info {
+    flex: 1;
+}
+
+.clinic-name {
+    color: #0869ea;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.clinic-meta {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.rating {
+    margin-top: 6px;
+    color: #f59e0b;
+}
+
+
+/* ACCION */
+
+.result-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.btn-hours {
+    background: #f2994a;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+
+.info-row img {
+    width: 16px;
+    height: 16px;
+}
+
+.info-row span {
+    font-family: Poppins;
+    font-size: 14px;
+    color: #52575c;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #52575C;
+}
+
+.favorite-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.favorite-btn img {
+    width: 22px;
+    height: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .result-card {
+        flex-direction: column;
+    }
+
+    .result-card-image {
+        width: 100%;
+        height: 200px;
+    }
+
+    .price-action {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 6px;
+    }
+
+}

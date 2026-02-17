@@ -1,0 +1,95 @@
+.info-bar {
+    width: 100%;
+    background: #041C84;
+    padding: 16px 0;
+}
+
+
+.info-bar-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.info-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+
+
+/* Chips (Tomografía / Caracas) */
+
+.filter-chip {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 4px 12px;
+    height: 31px;
+
+    background: transparent;
+
+    border: 1.5px solid #F9F9FA;
+    border-radius: 999px;
+
+    cursor: pointer;
+
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+
+    color: #F9F9FA;
+}
+
+
+/* Botón fecha */
+
+.date-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 6px 28px;
+
+    background: linear-gradient(180deg, #2C83F7 -26%, #0754BA 135%);
+    border: none;
+    border-radius: 6px;
+
+    color: #F9F9FA;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 15px;
+
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+
+/* Botón naranja */
+
+.search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 6px 32px;
+
+    background: linear-gradient(180deg, #FFAB62 -50%, #E4720F 130%);
+    border: none;
+    border-radius: 6px;
+
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 15px;
+
+    cursor: pointer;
+    white-space: nowrap;
+}

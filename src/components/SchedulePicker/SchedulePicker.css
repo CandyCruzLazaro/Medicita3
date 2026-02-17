@@ -1,0 +1,205 @@
+/* CONTENEDOR */
+
+.schedule-box {
+    background: #F9F9FA;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* TITULO */
+
+.schedule-header {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    color: #0869EA;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* GRID */
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+/* COLUMNA */
+
+.schedule-column {
+    text-align: center;
+}
+
+/* DIA */
+
+.day-title {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    color: #52575C;
+}
+
+.day-title.active {
+    color: #0869EA;
+}
+
+/* FECHA */
+
+.day-date {
+    font-size: 13px;
+    color: #9AA1A7;
+    margin-bottom: 12px;
+}
+
+/* HORA */
+
+.time {
+    display: block;
+    margin: 8px auto;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+/* ACTIVO */
+
+.time.active {
+    background: #E5E7EB;
+    color: #0869EA;
+    font-weight: 500;
+}
+
+/* DESHABILITADO */
+
+.time.disabled {
+    color: #D1D5DB;
+    cursor: default;
+}
+
+/* FLECHA */
+
+.schedule-arrow {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #0869EA;
+}
+
+/* CONTENEDOR GENERAL */
+
+.schedule-panel {
+    width: 100%;
+    max-width: 540px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* TEXTO SUPERIOR */
+
+.next-available {
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    color: #0869EA;
+    text-align: center;
+}
+
+/* TARJETA BLANCA */
+
+.schedule-card {
+    background: #F9F9FA;
+    border-radius: 5px;
+    padding: 20px;
+
+    box-shadow:
+        0px 1px 2px rgba(0, 0, 0, .06),
+        0px 1px 3px rgba(0, 0, 0, .10);
+}
+
+/* SOLO TEMPORAL PARA VER ESPACIO */
+
+.schedule-placeholder {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9CA3AF;
+}
+
+/* ============================= */
+/* TABLET */
+/* ============================= */
+
+@media (max-width: 1024px) {
+
+    .schedule-panel {
+        max-width: 100%;
+        padding: 0 16px;
+    }
+
+    .schedule-grid {
+        gap: 16px;
+    }
+
+}
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    /* Cambiamos 4 columnas → 2 columnas */
+
+    .schedule-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .schedule-header {
+        font-size: 16px;
+    }
+
+    .day-title {
+        font-size: 15px;
+    }
+
+    .time {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+}
+
+/* ============================= */
+/* MOBILE PEQUEÑO */
+/* ============================= */
+
+@media (max-width: 480px) {
+
+    /* Pasamos a scroll horizontal cómodo */
+
+    .schedule-grid {
+        grid-template-columns: repeat(4, minmax(110px, 1fr));
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+
+    .schedule-column {
+        min-width: 110px;
+    }
+
+    .schedule-header {
+        font-size: 15px;
+    }
+
+    .next-available {
+        font-size: 13px;
+    }
+
+}

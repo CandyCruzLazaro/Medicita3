@@ -1,0 +1,53 @@
+.map-sidebar {
+    width: 300px;
+    min-width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    flex-shrink: 0;
+
+    position: sticky;
+    top: 140px;
+    /* ajusta según altura navbar + header */
+}
+
+
+/* Botón buscar mapa */
+
+.map-btn {
+    border: none;
+    background: none;
+    color: #2E7D32;
+
+    font-weight: 500;
+    font-size: 14px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+
+/* Contenedor mapa */
+
+
+
+.map-container {
+    height: 550px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #d9d9d9;
+}
+
+
+/* iframe */
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}

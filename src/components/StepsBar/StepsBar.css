@@ -1,0 +1,74 @@
+.steps-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    gap: 145px;
+
+}
+
+/* Cada paso SOLO mide lo del círculo */
+.step-item {
+    width: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* Círculo */
+.step-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #d9dbde;
+    color: #868f97;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.step-circle.active {
+    background-color: #0869ea;
+    color: white;
+    box-shadow: 0 0 0 6px rgba(8, 105, 234, 0.12);
+}
+
+/* Texto */
+.step-label {
+    margin-top: 12px;
+    width: 48px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #868f97;
+    text-align: center;
+}
+
+.step-label.active {
+    color: #0869ea;
+}
+
+/* Línea flotante */
+.step-line {
+    position: absolute;
+    top: 24px;
+    /* centro exacto del círculo */
+    left: 60px;
+    width: 120px;
+    height: 1px;
+    background-color: #d9dbde;
+}
+
+.step-line.active {
+    background-color: #0869ea;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .step-line {
+        display: none;
+    }
+}

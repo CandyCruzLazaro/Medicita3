@@ -1,0 +1,169 @@
+.patient-form {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* TITULOS */
+
+.form-titles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.form-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #0869EA;
+}
+
+/* GRID PRINCIPAL */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+/* BLOQUES */
+
+.form-block {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* SUBTITULOS */
+
+.form-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    color: #52575C;
+}
+
+/* INPUTS */
+
+.form-input {
+    height: 43px;
+    padding: 10px 12px;
+
+    border: 1px solid #041C84;
+    border-radius: 5px;
+
+    background: #F9F9FA;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    outline: none;
+}
+
+.form-input::placeholder {
+    color: #868F97;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* TEXTAREA */
+
+.form-textarea {
+    min-height: 80px;
+    resize: none;
+}
+
+/* REQUERIMIENTOS */
+
+.requirements-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #0869EA;
+}
+
+.requirements-list {
+    padding-left: 20px;
+}
+
+.requirements-list li {
+    font-size: 18px;
+    font-weight: 500;
+    color: #52575C;
+    margin-bottom: 8px;
+}
+
+/* CHECKBOX */
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+
+    font-size: 15px;
+    font-weight: 500;
+    color: #0869EA;
+}
+
+.form-checkbox input {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+/* BOTÓN */
+
+.form-button {
+    margin: 50px auto 0;
+    display: block;
+
+    padding: 10px 40px;
+
+    border: none;
+    border-radius: 4px;
+
+    background: linear-gradient(180deg, #2C83F7, #0754BA);
+
+    color: #F9F9FA;
+    font-size: 15px;
+    font-weight: 500;
+
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-button:hover {
+    opacity: 0.9;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .form-titles {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .form-title {
+        font-size: 20px;
+    }
+
+    .requirements-title {
+        font-size: 20px;
+    }
+
+    .form-button {
+        width: 100%;
+    }
+
+}

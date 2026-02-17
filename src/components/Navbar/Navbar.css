@@ -1,0 +1,470 @@
+.navbar {
+    width: 100%;
+    height: 90px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+
+.navbar-container {
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 62px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+
+.navbar-logo {
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #041c84;
+}
+
+.navbar-logo-img {
+    height: 70px;
+    object-fit: contain;
+}
+
+
+/* MENU */
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* LINKS */
+
+.nav-link {
+    appearance: none;
+    -webkit-appearance: none;
+
+    background: none;
+    border: none;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+
+    color: #041C84;
+
+    padding: 8px 30px;
+    cursor: pointer;
+
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #078CDF;
+}
+
+.navbar-menu a:hover {
+    color: #078CDF;
+}
+
+.navbar-link {
+    transition: color 0.2s ease;
+    cursor: pointer;
+}
+
+
+/* BOTÓN REGISTRO (OUTLINE) */
+
+.nav-btn-outline {
+    background: transparent;
+    border: 1px solid #041C84;
+    border-radius: 4px;
+
+    padding: 8px 30px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+
+    color: #041C84;
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.nav-btn-outline:hover {
+    background: #041C84;
+    color: white;
+}
+
+
+/* ICON BUTTON (?) */
+
+.nav-icon-btn {
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+    border: 2px solid #041c84;
+    background: transparent;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+
+    color: #041c84;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.navbar-link:focus {
+    outline: none;
+}
+
+.navbar-link:focus-visible {
+    outline: 2px solid #078CDF;
+    outline-offset: 2px;
+}
+
+.mobile-menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: block;
+        font-size: 26px;
+        cursor: pointer;
+        color: #041C84;
+    }
+
+    .nav-link {
+        display: none;
+    }
+}
+
+
+/*Navbarsearch*/
+
+.navbar-search {
+    background: #DFF1FC;
+    height: 154px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* CONTENEDOR GENERAL */
+.navbar-search-bar {
+    display: flex;
+    align-items: center;
+
+    background: #DFF1FC;
+    border: 2px solid #DFF1FC;
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+
+/* INPUTS Y SELECTS */
+.navbar-search-bar select,
+.navbar-search-bar input {
+    height: 48px;
+    padding: 0 14px;
+
+    border: none;
+    outline: none;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: #6B7280;
+
+    background: transparent;
+}
+
+
+
+/* FECHA */
+.navbar-search-bar input[type="date"] {
+    min-width: 140px;
+}
+
+.navbar-search-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-group {
+    display: flex;
+    align-items: center;
+    height: 48px;
+
+    border: 2px solid #4F7BFF;
+    border-radius: 8px;
+    overflow: hidden;
+
+    background: white;
+    background: #ffffff;
+
+    border: 2px solid #4E73FF;
+    border-radius: 12px;
+}
+
+.search-group:first-child {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.search-group:last-child {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+
+
+.search-group select,
+.search-group input {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.search-group input {
+    font-family: Poppins;
+}
+
+
+/* DIVISORES ENTRE CAMPOS */
+.navbar-search-bar select,
+.navbar-search-bar input {
+    border-right: 1px solid #D9DBDE;
+}
+
+/* QUITAR divisor al último input (Hora) */
+.navbar-search-bar select:last-of-type {
+    border-right: none;
+}
+
+.navbar-search-bar input[type="date"] {
+    min-width: 140px;
+}
+
+/* BOTÓN BUSCAR */
+.btn-search {
+    height: 40px;
+    padding: 0 22px;
+
+    background: #F7931E;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* HOVER */
+.btn-search:hover {
+    background: #e68012;
+}
+
+/* FOCUS INPUT */
+.navbar-search-bar select:focus,
+.navbar-search-bar input:focus {
+    border-color: #041C84;
+}
+
+.navbar-search-container {
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+    padding: 10px 62px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-search .navbar-logo img {
+    width: 238px;
+    height: auto;
+}
+
+.navbar-search-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.navbar-search .nav-link {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+
+    color: #041C84;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.help-btn {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    border: 3px solid #041C84;
+
+    background: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 20px;
+    color: #041C84;
+
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar-search-bar {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .navbar-search-bar select,
+    .navbar-search-bar input {
+        width: 100%;
+    }
+
+    .btn-search {
+        width: 100%;
+    }
+}
+
+/*Botón Mi cuenta y ?*/
+.search-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.account-text {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 15px;
+    color: #041C84;
+}
+
+.account-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.help-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid #041C84;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 600;
+    font-size: 16px;
+    color: #041C84;
+}
+
+@media (max-width: 768px) {
+
+    /* Navbar general */
+    .navbar-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    @media (max-width: 768px) {
+
+        .search-group {
+            border: none;
+        }
+
+    }
+
+    @media (max-width: 1024px) {
+        .navbar-search-bar {
+            padding: 0 20px;
+        }
+    }
+
+
+    /* Barra búsqueda */
+    .navbar-search-bar {
+        width: 100%;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    /* Grupos de inputs */
+    .search-groups {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .search-group {
+        width: 100%;
+    }
+
+    /* Inputs full width */
+    .search-group select,
+    .search-group input {
+        width: 100%;
+    }
+
+    /* Acciones */
+    .search-actions {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    /* Botón buscar full width */
+    .btn-search {
+        width: 100%;
+    }
+
+    /* Mi cuenta + ? centrado */
+    .account-box {
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,108 @@
+.about-page {
+    min-height: 100vh;
+    background: #ffffff;
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.about-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 24px 32px;
+}
+
+.about-logo-text {
+    font-size: 24px;
+    font-weight: 600;
+    color: #0869ea;
+}
+
+.about-close-btn {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #041c84;
+}
+
+.about-main {
+    display: flex;
+    flex-direction: column;
+    /* 🔥 ESTO ES CLAVE */
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+
+
+.about-title {
+    font-size: 64px;
+    font-weight: 600;
+    color: #0869ea;
+    margin: 0;
+}
+
+.about-title-highlight {
+    color: #f58a1f;
+}
+
+.about-content {
+    margin-top: 40px;
+    text-align: center;
+    max-width: 740px;
+}
+
+.about-subtitle {
+    font-size: 48px;
+    font-weight: 600;
+    color: #041c84;
+    margin-bottom: 24px;
+}
+
+.about-description {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #868f97;
+    margin: 0 auto;
+}
+
+.about-footer {
+    background: #dff1fc;
+    padding: 60px 80px 30px;
+}
+
+.about-footer-content {
+    display: flex;
+    gap: 200px;
+    justify-content: flex-start;
+}
+
+.footer-column h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #868f97;
+    margin-bottom: 12px;
+}
+
+.footer-column p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #868f97;
+    margin: 6px 0;
+}
+
+.footer-copy {
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #868f97;
+}

@@ -1,0 +1,87 @@
+.user-menu {
+    width: 280px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+
+    font-family: "Poppins", sans-serif;
+}
+
+.user-avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.menu-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    font-size: 18px;
+    font-weight: 500;
+    color: #041c84;
+
+    cursor: pointer;
+    padding: 3px 12px;
+    border-radius: 8px;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.15s ease;
+}
+
+.menu-item:hover {
+    background-color: #f1f5ff;
+    transform: translateX(4px);
+}
+
+.menu-alert:hover {
+    background-color: #ffecec;
+}
+
+.menu-logout:hover {
+    background-color: #fff0f0;
+}
+
+
+
+.menu-icon {
+    font-size: 22px;
+    margin-right: 14px;
+}
+
+
+.menu-alert {
+    color: #ff3b3b;
+    font-weight: 500;
+}
+
+.menu-logout {
+    margin-top: 10px;
+}
+
+@keyframes menuFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.user-menu {
+    animation: menuFadeIn 0.25s ease-out;
+}

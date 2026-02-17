@@ -1,0 +1,41 @@
+.page-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 62px;
+    background: #ffffff;
+}
+
+/* Flecha */
+
+.page-back {
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    color: #041C84;
+    cursor: pointer;
+}
+
+/* Texto */
+
+.page-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.page-link {
+    color: #041C84;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.page-current {
+    color: #078CDF;
+    font-weight: 500;
+}
+
+.page-separator {
+    color: #041C84;
+}
