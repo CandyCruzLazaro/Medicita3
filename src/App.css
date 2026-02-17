@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+
+.main-content {
+  flex: 1;
+  padding-bottom: 60px;
+}
+
+
+.hero-section {
+  background-image: url("./assets/Fondo.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  padding-bottom: 80px;
+  /* separa del contenido */
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+/*STEPBAR*/
+.steps-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* ESTE ES EL CONTROL DE ANCHO */
+.steps-wrapper>* {
+  width: 90%;
+  max-width: 1200px;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
